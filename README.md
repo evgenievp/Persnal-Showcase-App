@@ -14,7 +14,7 @@ This project demonstrates:
 Backend
 - Java 17
 - Spring Boot
-- Spring Security + JWT
+- Spring Security + JWT (planned)
 - Spring Data JPA / Hibernate
 - PostgreSQL
 - Maven
@@ -24,8 +24,8 @@ Backend
 - Tailwind CSS
 - TypeScript
 Features
-User Authentication – Register, login, logout with JWT
-Protected Routes – Projects visible only to authenticated users
+User Authentication – Register, login, logout with JWT (planned)
+Protected Routes – Projects visible only to authenticated users (planned)
 REST API – Fully functional endpoints for projects and auth
 Responsive Design – Mobile-friendly frontend
 
@@ -62,11 +62,11 @@ Acknowledgments:
 - Frontend Template: Based on [react-landing-page-template-2021]
 (https://github.com/issaafalkattan/react-landing-page-template-2021) by [Issaaf Kattan]
 (https://github.com/issaafalkattan) – a beautiful and responsive landing page template.
-- My Contributions: 
+My Contributions: 
   - Built the entire Spring Boot backend from scratch
-  - Implemented user authentication with JWT
+  - Implemented user authentication with JWT (in progress)
   - Integrated frontend with backend APIs
-  - Added conditional rendering based on login state
+  - Added conditional rendering based on login state (planned)
   - Containerized PostgreSQL with Docker
   - Modified and extended frontend components (Login/Register pages, Projects integration)
 
