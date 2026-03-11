@@ -1,5 +1,9 @@
 Portfolio Platform (Work in progress)
 
+
+![Portfolio Demo](demo.gif)
+
+
 A full-stack web application showcasing my journey as a Java developer. 
 Built with a custom Spring Boot backend integrated with a modified React/Next.js frontend template.
 
