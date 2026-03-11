@@ -16,7 +16,7 @@ This project demonstrates:
 - Frontend integration with a responsive React/Next.js template
   Tech Stack
 Backend
-- Java 17
+- Java 21
 - Spring Boot
 - Spring Security + JWT (planned)
 - Spring Data JPA / Hibernate
