@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 type Project = {
   title: string;
@@ -16,25 +17,21 @@ const Projects = () => {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    // Вземи токена от localStorage
     const token = localStorage.getItem("token");
     
-    // Ако няма токен, прати към login
     if (!token) {
       router.push("/login");
       return;
     }
 
-    // Изпрати заявка с токена в header-ite
     fetch("http://localhost:8080/api/projects", {
       headers: {
-        'Authorization': 'Bearer ' + token,  // 👈 ТУК СЕ ПРАЩА ТОКЕНА
+        'Authorization': 'Bearer ' + token,
         'Content-Type': 'application/json'
       }
     })
       .then((res) => {
         if (res.status === 401) {
-          // Ако токена не важи, прати към login
           localStorage.removeItem("token");
           router.push("/login");
           throw new Error("Unauthorized");
@@ -84,14 +81,56 @@ const Projects = () => {
           projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow"
+              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col aspect-square overflow-hidden"
             >
-              <h3 className="text-xl font-semibold mb-2">
-                {project.title}
-              </h3>
-              <p className="text-gray-600">
-                {project.description}
-              </p>
+              {/* Снимка - заема горната половина на квадратната картичка */}
+              <div className="relative w-full h-1/2 bg-gray-100">
+                {project.imageUrl ? (
+                  <img
+                    src={project.imageUrl}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-gray-400">
+                    No image
+                  </div>
+                )}
+              </div>
+              
+              {/* Съдържание - заема долната половина */}
+              <div className="p-6 flex flex-col flex-1">
+                <h3 className="text-xl font-semibold mb-2 line-clamp-1">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 mb-4 line-clamp-3 flex-1">
+                  {project.description}
+                </p>
+                
+                {/* Линкове */}
+                <div className="flex gap-4 mt-auto pt-4 border-t border-gray-100">
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
+                    >
+                      GitHub
+                    </a>
+                  )}
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-800 transition-colors text-sm font-medium"
+                    >
+                      Live Demo
+                    </a>
+                  )}
+                </div>
+              </div>
             </div>
           ))
         )}

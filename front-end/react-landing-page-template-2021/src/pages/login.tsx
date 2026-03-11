@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const LoginPage = () => {
   const router = useRouter();
@@ -34,7 +35,23 @@ const LoginPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-background">
       <form onSubmit={handleLogin} className="bg-white p-8 rounded-xl shadow-lg w-96">
-        <h2 className="text-2xl mb-6 text-center font-bold">Login</h2>
+        {/* Лого/картинка */}
+        <div className="flex justify-center mb-6">
+          {process.env.NEXT_PUBLIC_LOGO_URL ? (
+            <img 
+              src={process.env.NEXT_PUBLIC_LOGO_URL} 
+              alt="Logo"
+              className="h-16 w-auto object-contain"
+            />
+          ) : (
+            // Placeholder ако няма лого
+            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+              <span className="text-2xl text-blue-600">🚀</span>
+            </div>
+          )}
+        </div>
+        
+        <h2 className="text-2xl mb-6 text-center font-bold">Welcome</h2>
 
         <input
           type="email"
@@ -52,23 +69,22 @@ const LoginPage = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button className="w-full bg-blue-500 text-white p-2 rounded">
+        <button className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition">
           Login
         </button>
 
         <div className="mt-4 text-center">
-          No account? <Link href="/register">Register</Link>
+          No account? <Link href="/register" className="text-blue-500 hover:underline">Register</Link>
         </div>
         <div className="mt-3 text-center text-sm">
-
-  <Link href="/forgot-password">
-    <span className="text-blue-500 cursor-pointer">
-      Forgot password?
-    </span>
-  </Link>
-</div>
+          <Link href="/forgot-password" className="text-blue-500 hover:underline">
+            Forgot password?
+          </Link>
+        </div>
         <div className="mt-2 text-center">
-          <Link href="/">Back to Home</Link>
+          <Link href="/" className="text-gray-600 hover:text-gray-800 text-sm">
+            ← Back to Home
+          </Link>
         </div>
       </form>
     </div>
