@@ -56,10 +56,6 @@ How to run:
     docker-compose --build
 Project should be available at localhost:3000 after successful build
 
-SPRING_PROFILES_ACTIVE=dev
-
-NEXT_PUBLIC_API_URL=http://localhost:8080
-
 
 Acknowledgments:
 - Frontend Template: Based on [react-landing-page-template-2021]
