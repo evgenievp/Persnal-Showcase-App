@@ -4,97 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6944bee0-e02d-4cc3-9154-9b6da690654d" name="Changes" comment="Add my demo">
-      <change beforePath="$PROJECT_DIR$/front-end/get from.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/.husky/pre-commit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/.vscode/tasks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/lint-staged.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/netlify.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/next-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/next.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/public/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/public/assets/gifs/originalDemo.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/public/assets/images/headlessui.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/public/assets/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/public/assets/images/mainPic.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/public/assets/images/nextjs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/public/assets/images/nextjs.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/public/assets/images/product1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/public/assets/images/product2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/public/assets/images/react.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/public/assets/images/tailwindcss.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/public/assets/images/ts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/public/code.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/public/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/public/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/components/About.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/components/Analytics.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/components/Canvas.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/components/Divider.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/components/Header.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/components/LazyShow.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/components/MainHero.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/components/MainHeroImage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/components/Pricing.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/components/Product.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/components/Projects.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/components/Wave.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/config/index.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/hooks/useCanvas.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/hooks/useResponsiveSize.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/interfaces.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/lib/googleAds.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/lib/gtag.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/pages/_app.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/pages/_document.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/pages/forgot-password.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/pages/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/pages/login.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/pages/register.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/styles/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/utils/AppConfig.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/utils/utils.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/src/utils/wave.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/tailwind.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/react-landing-page-template-2021/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/PortfolioPageApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/config/JwtAuthFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/config/JwtUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/config/SecurityChain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/controller/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/controller/ProjectsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/controller/PublicController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/dtos/LoginRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/dtos/ProjectDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/dtos/RegisterRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/dtos/ResetPasswordRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/dtos/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/model/Project.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/model/UserModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/repo/PublicThingsRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/repo/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/service/EmailService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/service/PublicService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/java/web_page/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-page/src/test/java/web_page/PortfolioPageApplicationTests.java" beforeDir="false" />
+    <list default="true" id="6944bee0-e02d-4cc3-9154-9b6da690654d" name="Changes" comment="Ready for test deploy">
+      <change afterPath="$PROJECT_DIR$/docker/backend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/frontend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +61,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/evgen/Desktop/portfolio-platform/portfolio-page&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/evgen/Desktop/portfolio-platform&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
@@ -224,8 +138,35 @@
       <option name="project" value="LOCAL" />
       <updated>1773213480864</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Ready for test deploy">
+      <option name="closed" value="true" />
+      <created>1773384988526</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1773384988526</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Ready for test deploy">
+      <option name="closed" value="true" />
+      <created>1773385340057</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1773385340057</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -235,6 +176,7 @@
     </ignored-roots>
     <MESSAGE value="Init commit" />
     <MESSAGE value="Add my demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add my demo" />
+    <MESSAGE value="Ready for test deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ready for test deploy" />
   </component>
 </project>
