@@ -16,7 +16,7 @@ This project demonstrates:
 - Frontend integration with a responsive React/Next.js template
   Tech Stack
 Backend
-- Java 17
+- Java 21
 - Spring Boot
 - Spring Security + JWT (planned)
 - Spring Data JPA / Hibernate
@@ -54,13 +54,6 @@ npm install
 npm run dev
 Database Setup (with Docker)
 bash
-docker run -d 
-  --name postgres_db 
-  -e POSTGRES_USER=evgenievp \
-  -e POSTGRES_PASSWORD=newPass123. \
-  -e POSTGRES_DB=blog_db \
-  -p 5432:5432 \
-  postgres:latest
 
 Acknowledgments:
 - Frontend Template: Based on [react-landing-page-template-2021]
