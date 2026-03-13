@@ -37,10 +37,7 @@ How to run:
     - git clone https://github.com/evgenievp/Persnal-Showcase-App.git
     - cd project-platform
     - write your own .env file with valid credentials (example)
-        POSTGRES_DB=project_db
-        POSTGRES_USER=example_user
-        POSTGRES_PASSWORD=example_password
-        
+
         POSTGRES_DB=project_db
         POSTGRES_USER=example_user
         POSTGRES_PASSWORD=example_password
