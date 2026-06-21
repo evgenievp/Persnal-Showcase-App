@@ -1,7 +1,7 @@
 Portfolio Platform 
 
 
-![Project-Showcase-App](demo.webm)
+![Project-Showcase-App](demo.gif)
 
 
 A full-stack web application showcasing my journey as a Java developer. 
