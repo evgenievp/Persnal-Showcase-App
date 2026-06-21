@@ -1,7 +1,7 @@
 Portfolio Platform 
 
 
-![Portfolio Demo](demo.gif)
+![Portfolio Demo](demo.webm)
 
 
 A full-stack web application showcasing my journey as a Java developer. 
