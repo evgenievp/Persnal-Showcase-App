@@ -1,17 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
 import config from '../config/index.json';
 
 const Footer = () => {
-  const {  about } = config;
+  const { about } = config;
   const { socialMedia } = about;
+  const [visitCount, setVisitCount] = useState(0);
+
+  useEffect(() => {
+    const storedVisits = Number(localStorage.getItem('visitCount') || '0');
+    const nextVisits = storedVisits + 1;
+
+    localStorage.setItem('visitCount', String(nextVisits));
+    setVisitCount(nextVisits);
+  }, []);
 
   return (
     <div
       id="footer"
-      className="mx-auto container xl:px-20 lg:px-12 sm:px-6 px-4 py-12"
+      className="mx-auto container px-4 py-10 sm:px-6 lg:px-12 xl:px-20"
     >
-      <div className="flex flex-col items-center justify-center">
-        <div className="flex items-center gap-x-8 mt-6 h-8">
+      <div className="flex flex-col items-center justify-center gap-5 text-center">
+        <div className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm text-gray-600 shadow-sm sm:text-base">
+          Visits:{' '}
+          <span className="font-semibold text-primary">{visitCount}</span>
+        </div>
+
+        <div className="flex h-8 items-center gap-x-8">
           {socialMedia?.linkedin && (
             <a
               href={socialMedia.linkedin}
@@ -36,7 +51,7 @@ const Footer = () => {
               </svg>
             </a>
           )}
-        </div>  
+        </div>
       </div>
     </div>
   );

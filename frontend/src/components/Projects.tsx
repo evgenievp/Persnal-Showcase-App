@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import { useEffect, useState } from 'react';
 
+import { useRouter } from 'next/router';
 
 type Project = {
   title: string;
@@ -14,27 +14,27 @@ const Projects = () => {
   const router = useRouter();
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
+  const [error, setError] = useState('');
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
-    
+    const token = localStorage.getItem('token');
+
     if (!token) {
-      router.push("/login");
+      router.push('/login');
       return;
     }
 
-    fetch("http://localhost:8080/api/projects", {
+    fetch('http://localhost:8080/api/projects', {
       headers: {
-        'Authorization': 'Bearer ' + token,
-        'Content-Type': 'application/json'
-      }
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json',
+      },
     })
       .then((res) => {
         if (res.status === 401) {
-          localStorage.removeItem("token");
-          router.push("/login");
-          throw new Error("Unauthorized");
+          localStorage.removeItem('token');
+          router.push('/login');
+          throw new Error('Unauthorized');
         }
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
@@ -46,7 +46,7 @@ const Projects = () => {
         setLoading(false);
       })
       .catch((err) => {
-        console.error("Projects error:", err);
+        console.error('Projects error:', err);
         setError(err.message);
         setLoading(false);
       });
@@ -54,8 +54,13 @@ const Projects = () => {
 
   if (loading) {
     return (
-      <section id="projects" className="max-w-7xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold mb-10 text-center">Projects</h2>
+      <section
+        id="projects"
+        className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8"
+      >
+        <h2 className="mb-8 text-center text-2xl font-bold sm:mb-10 sm:text-3xl">
+          Projects
+        </h2>
         <div className="text-center">Loading projects...</div>
       </section>
     );
@@ -63,25 +68,37 @@ const Projects = () => {
 
   if (error) {
     return (
-      <section id="projects" className="max-w-7xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold mb-10 text-center">Projects</h2>
+      <section
+        id="projects"
+        className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8"
+      >
+        <h2 className="mb-8 text-center text-2xl font-bold sm:mb-10 sm:text-3xl">
+          Projects
+        </h2>
         <div className="text-center text-red-500">Error: {error}</div>
       </section>
     );
   }
 
   return (
-    <section id="projects" className="max-w-7xl mx-auto px-6 py-16">
-      <h2 className="text-3xl font-bold mb-10 text-center">Projects</h2>
+    <section
+      id="projects"
+      className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8"
+    >
+      <h2 className="mb-8 text-center text-2xl font-bold sm:mb-10 sm:text-3xl">
+        Projects
+      </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.length === 0 ? (
-          <p className="col-span-3 text-center">No projects found</p>
+          <p className="text-center md:col-span-2 lg:col-span-3">
+            No projects found
+          </p>
         ) : (
           projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col aspect-square overflow-hidden"
+              className="flex min-h-[26rem] flex-col overflow-hidden rounded-lg bg-white shadow-md transition-shadow hover:shadow-lg sm:min-h-[28rem] lg:aspect-square lg:min-h-0"
             >
               <div className="relative w-full h-1/2 bg-gray-100">
                 {project.imageUrl ? (
@@ -96,7 +113,7 @@ const Projects = () => {
                   </div>
                 )}
               </div>
-              
+
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-semibold mb-2 line-clamp-1">
                   {project.title}
@@ -104,8 +121,8 @@ const Projects = () => {
                 <p className="text-gray-600 mb-4 line-clamp-3 flex-1">
                   {project.description}
                 </p>
-                
-                <div className="flex gap-4 mt-auto pt-4 border-t border-gray-100">
+
+                <div className="mt-auto flex flex-wrap gap-4 border-t border-gray-100 pt-4">
                   {project.githubUrl && (
                     <a
                       href={project.githubUrl}

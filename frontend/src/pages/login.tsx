@@ -1,44 +1,48 @@
-import { useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { useState } from 'react';
+
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const LoginPage = () => {
   const router = useRouter();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleLogin = async (e: any) => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8080/api/auth/login", {
-        method: "POST",
+      const response = await fetch('http://localhost:8080/api/auth/login', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json"
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email, password })
+        body: JSON.stringify({ email, password }),
       });
 
       if (response.ok) {
         const token = await response.text();
-        localStorage.setItem("token", token);
-        router.push("/");
+        localStorage.setItem('token', token);
+        router.push('/');
       } else {
-        alert("Invalid credentials");
+        alert('Invalid credentials');
       }
     } catch (err) {
-      alert("Server error");
+      alert('Server error');
     }
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <form onSubmit={handleLogin} className="bg-white p-8 rounded-xl shadow-lg w-96">
+    <div className="min-h-screen flex items-center justify-center bg-background px-4 py-10">
+      <form
+        onSubmit={handleLogin}
+        className="w-full max-w-sm rounded-lg bg-white p-6 shadow-lg sm:p-8"
+      >
         {/* Лого/картинка */}
         <div className="flex justify-center mb-6">
           {process.env.NEXT_PUBLIC_LOGO_URL ? (
-            <img 
-              src={process.env.NEXT_PUBLIC_LOGO_URL} 
+            <img
+              src={process.env.NEXT_PUBLIC_LOGO_URL}
               alt="Logo"
               className="h-16 w-auto object-contain"
             />
@@ -49,7 +53,7 @@ const LoginPage = () => {
             </div>
           )}
         </div>
-        
+
         <h2 className="text-2xl mb-6 text-center font-bold">Welcome</h2>
 
         <input
@@ -73,16 +77,22 @@ const LoginPage = () => {
         </button>
 
         <div className="mt-4 text-center">
-          No account? <Link href="/register" className="text-blue-500 hover:underline">Register</Link>
+          No account?{' '}
+          <Link href="/register" className="text-blue-500 hover:underline">
+            Register
+          </Link>
         </div>
         <div className="mt-3 text-center text-sm">
-          <Link href="/forgot-password" className="text-blue-500 hover:underline">
+          <Link
+            href="/forgot-password"
+            className="text-blue-500 hover:underline"
+          >
             Forgot password?
           </Link>
         </div>
         <div className="mt-2 text-center">
           <Link href="/" className="text-gray-600 hover:text-gray-800 text-sm">
-            ← Back to Home
+            Back to Home
           </Link>
         </div>
       </form>

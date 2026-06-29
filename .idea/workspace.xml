@@ -4,11 +4,66 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6944bee0-e02d-4cc3-9154-9b6da690654d" name="Changes" comment="Ready for test deploy">
-      <change afterPath="$PROJECT_DIR$/docker/backend/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/frontend/Dockerfile" afterDir="false" />
+    <list default="true" id="6944bee0-e02d-4cc3-9154-9b6da690654d" name="Changes" comment="Ready for build">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/config/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/config/JwtAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/config/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/config/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/config/SecurityChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/config/SecurityChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/controller/ProjectsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/controller/ProjectsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/controller/PublicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/controller/PublicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/dtos/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/dtos/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/dtos/ProjectDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/dtos/ProjectDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/dtos/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/dtos/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/dtos/ResetPasswordRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/dtos/ResetPasswordRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/dtos/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/dtos/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/model/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/model/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/model/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/repo/PublicThingsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/repo/PublicThingsRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/repo/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/repo/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/service/PublicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/service/PublicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web_page/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web_page/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/backend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/frontend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/frontend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.husky/pre-commit" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.husky/pre-commit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.vscode/tasks.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.vscode/tasks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/lint-staged.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/lint-staged.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/netlify.toml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/netlify.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/next-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/next-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Analytics.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Analytics.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Canvas.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Canvas.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Divider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Divider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/LazyShow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LazyShow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/MainHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/MainHero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/MainHeroImage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/MainHeroImage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Product.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Wave.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Wave.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/config/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/config/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/hooks/useCanvas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hooks/useCanvas.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/hooks/useResponsiveSize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hooks/useResponsiveSize.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/interfaces.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/interfaces.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/lib/googleAds.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/lib/googleAds.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/lib/gtag.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/lib/gtag.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/_document.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/AppConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/AppConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/wave.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/wave.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +95,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/evgenievp/Persnal-Showcase-App.git&quot;,
-    &quot;accountId&quot;: &quot;9eb7aafa-6ac8-493b-9224-ceb05ecc5f50&quot;
+    &quot;accountId&quot;: &quot;41db11c7-2d14-44d0-a697-84ebaaa58d5f&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -61,7 +116,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/evgen/Desktop/portfolio-platform&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/petar/Documents/Programming/Ready Projects/portfolio-platform&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
@@ -83,13 +138,7 @@
       </method>
     </configuration>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
-      </set>
-    </attachedChunks>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6944bee0-e02d-4cc3-9154-9b6da690654d" name="Changes" comment="" />
@@ -154,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773385340057</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ready for build">
+      <option name="closed" value="true" />
+      <created>1773389385677</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1773389385677</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +234,7 @@
     <MESSAGE value="Init commit" />
     <MESSAGE value="Add my demo" />
     <MESSAGE value="Ready for test deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ready for test deploy" />
+    <MESSAGE value="Ready for build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ready for build" />
   </component>
 </project>

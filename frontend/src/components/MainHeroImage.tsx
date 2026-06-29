@@ -5,31 +5,13 @@ import config from '../config/index.json';
 const MainHeroImage = () => {
   const { mainHero } = config;
   return (
-<div style={{
-  position: 'absolute',
-  top: '80px',
-  right: 0,
-  width: '45%', 
-  height: 'calc(100vh - 80px)',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-
-}}>
-  <img
-  style={{
-    width: '100%',
-    height: '70%',
-    objectFit: 'cover',
-    zIndex: 10,
-    objectPosition: 'center',
-    marginTop: '130px',
-    clipPath: 'polygon(15% 0, 100% 0, 100% 100%, 0 100%)'  // ← трапец
-  }}
-  src={mainHero.img}
-  alt="happy team image"
-/>
-</div>
+    <div className="relative z-10 mx-auto flex w-full max-w-xl items-center justify-center lg:max-w-none">
+      <img
+        className="hero-image h-64 w-full rounded-md object-cover object-center shadow-lg sm:h-80 md:h-96 lg:h-[32rem]"
+        src={mainHero.img}
+        alt="happy team image"
+      />
+    </div>
   );
 };
 
