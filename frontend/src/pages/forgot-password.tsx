@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 import { useState } from "react";
 
 export default function ForgotPassword() {
@@ -13,9 +13,9 @@ export default function ForgotPassword() {
     const res = await fetch(`${API_URL}/api/auth/forgot-password`, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email })
+      body: JSON.stringify({ email }),
     });
 
     if (res.ok) {
@@ -24,3 +24,33 @@ export default function ForgotPassword() {
       setMessage("User not found");
     }
   };
+
+  return (
+    <div className="min-h-screen flex items-center justify-center">
+      <form onSubmit={sendReset} className="bg-white p-8 rounded shadow w-96">
+        <h2 className="text-xl font-bold mb-4">Forgot password</h2>
+
+        <input
+          className="w-full border p-2 mb-4"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+
+        <button className="w-full bg-blue-500 text-white p-2 rounded">
+          Send reset link
+        </button>
+
+        {message && (
+          <div className="mt-4 text-center text-sm">
+            {message}
+          </div>
+        )}
+
+        <div className="mt-2 text-center">
+          <Link href="/">Back to Home</Link>
+        </div>
+      </form>
+    </div>
+  );
+}
