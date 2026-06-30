@@ -16,6 +16,8 @@ const Projects = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
+
   useEffect(() => {
     const token = localStorage.getItem('token');
 
@@ -24,7 +26,7 @@ const Projects = () => {
       return;
     }
 
-    fetch('http://localhost:8080/api/projects', {
+    fetch(`${API_URL}/api/projects`, {
       headers: {
         Authorization: `Bearer ${token}`,
         'Content-Type': 'application/json',
@@ -50,107 +52,4 @@ const Projects = () => {
         setError(err.message);
         setLoading(false);
       });
-  }, [router]);
-
-  if (loading) {
-    return (
-      <section
-        id="projects"
-        className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8"
-      >
-        <h2 className="mb-8 text-center text-2xl font-bold sm:mb-10 sm:text-3xl">
-          Projects
-        </h2>
-        <div className="text-center">Loading projects...</div>
-      </section>
-    );
-  }
-
-  if (error) {
-    return (
-      <section
-        id="projects"
-        className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8"
-      >
-        <h2 className="mb-8 text-center text-2xl font-bold sm:mb-10 sm:text-3xl">
-          Projects
-        </h2>
-        <div className="text-center text-red-500">Error: {error}</div>
-      </section>
-    );
-  }
-
-  return (
-    <section
-      id="projects"
-      className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8"
-    >
-      <h2 className="mb-8 text-center text-2xl font-bold sm:mb-10 sm:text-3xl">
-        Projects
-      </h2>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.length === 0 ? (
-          <p className="text-center md:col-span-2 lg:col-span-3">
-            No projects found
-          </p>
-        ) : (
-          projects.map((project, index) => (
-            <div
-              key={index}
-              className="flex min-h-[26rem] flex-col overflow-hidden rounded-lg bg-white shadow-md transition-shadow hover:shadow-lg sm:min-h-[28rem] lg:aspect-square lg:min-h-0"
-            >
-              <div className="relative w-full h-1/2 bg-gray-100">
-                {project.imageUrl ? (
-                  <img
-                    src={project.imageUrl}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center text-gray-400">
-                    No image
-                  </div>
-                )}
-              </div>
-
-              <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-xl font-semibold mb-2 line-clamp-1">
-                  {project.title}
-                </h3>
-                <p className="text-gray-600 mb-4 line-clamp-3 flex-1">
-                  {project.description}
-                </p>
-
-                <div className="mt-auto flex flex-wrap gap-4 border-t border-gray-100 pt-4">
-                  {project.githubUrl && (
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
-                    >
-                      GitHub
-                    </a>
-                  )}
-                  {project.liveUrl && (
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:text-blue-800 transition-colors text-sm font-medium"
-                    >
-                      Live Demo
-                    </a>
-                  )}
-                </div>
-              </div>
-            </div>
-          ))
-        )}
-      </div>
-    </section>
-  );
-};
-
-export default Projects;
+  }, [router, API_URL]);
