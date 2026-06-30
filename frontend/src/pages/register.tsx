@@ -11,6 +11,8 @@ export default function Register() {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
 
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
+
   const register = async (e: any) => {
     e.preventDefault();
 
@@ -19,7 +21,7 @@ export default function Register() {
       return;
     }
 
-    const res = await fetch('http://localhost:8080/api/auth/register', {
+    const res = await fetch(`${API_URL}/api/auth/register`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
