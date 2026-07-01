@@ -9,7 +9,7 @@ import web_page.service.PublicService;
 
 import java.util.List;
 
-@CrossOrigin(origins = "https://localhost/3000")
+@CrossOrigin(origins = "https://localhost/3000", "https://frontend-j486.onrender.com")
 @RequestMapping("/api")
 @RestController
 public class PublicController {
