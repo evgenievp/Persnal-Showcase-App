@@ -69,7 +69,7 @@ Example:
 
 ```env
 POSTGRES_DB=project_db
-POSTGRES_USER=example_user
+    POSTGRES_USER=example_user
 POSTGRES_PASSWORD=example_password
 
 MAIL_HOST=smtp.gmail.com
@@ -79,7 +79,11 @@ MAIL_PASSWORD=example_password
 
 SPRING_PROFILES_ACTIVE=dev
 NEXT_PUBLIC_API_URL=http://localhost:8080
+JWT_SECRET=mysecretkeymysecretkeymysecretkeymysecretkey
+JWT_EXPIRATION_MS=3600000
 ```
+
+
 
 The credentials above are examples. You can use your own local dummy values.
 

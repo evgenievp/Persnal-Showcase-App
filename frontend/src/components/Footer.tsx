@@ -1,18 +1,25 @@
 import React, { useEffect, useState } from 'react';
-
 import config from '../config/index.json';
 
 const Footer = () => {
   const { about } = config;
   const { socialMedia } = about;
-  const [visitCount, setVisitCount] = useState(0);
+
+  const [visitCount, setVisitCount] = useState<number | null>(null);
 
   useEffect(() => {
-    const storedVisits = Number(localStorage.getItem('visitCount') || '0');
-    const nextVisits = storedVisits + 1;
-
-    localStorage.setItem('visitCount', String(nextVisits));
-    setVisitCount(nextVisits);
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/visits`)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('Failed to fetch visits');
+        }
+        return res.json();
+      })
+      .then((count) => setVisitCount(count))
+      .catch((err) => {
+        console.error('Error fetching visit count:', err);
+        setVisitCount(null);
+      });
   }, []);
 
   return (
@@ -23,7 +30,9 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-center gap-5 text-center">
         <div className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm text-gray-600 shadow-sm sm:text-base">
           Visits:{' '}
-          <span className="font-semibold text-primary">{visitCount}</span>
+          <span className="font-semibold text-primary">
+            {visitCount === null ? '...' : visitCount}
+          </span>
         </div>
 
         <div className="flex h-8 items-center gap-x-8">
@@ -39,6 +48,7 @@ const Footer = () => {
               </svg>
             </a>
           )}
+
           {socialMedia?.github && (
             <a
               href={socialMedia.github}
