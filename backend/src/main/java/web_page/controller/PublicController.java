@@ -28,7 +28,7 @@ public class PublicController {
         return this.publicService.getProjects();
     }
 
-    @GetMapping("/api/visits")
+    @GetMapping("/visits")
     public long countVisit() {
         return visitService.incrementAndGet();
     }
